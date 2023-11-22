@@ -4,14 +4,26 @@
 
 :root {
     --blue: #2000E7;
+    --font-size: 1rem
 }
 
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: Poppins, sans-serif;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    width: 100%;
+    background-color: #f8f8ec;
 }
+
+body > * {
+    background-color: white;
+    padding: calc(var(--font-size) * 3);
+}
+
 
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -22,14 +34,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* HEADER */
 header {
-    margin: 45px 80px;
+    padding-top: 45px;
     justify-content: space-between;
 
 }
 
 .logo {
     color: #0E0578;
-    font-size: 48px;
+    font-size: calc(var(--font-size) * 3);
     font-weight: 700;
     text-decoration: none;
 }
@@ -42,19 +54,29 @@ header {
 
 .header_links > li {
     color: #686565;
-    font-size: 30px;
+    font-size: calc(var(--font-size) * 1.75);
     font-weight: 400;
     list-style: none;
     margin: 0 50px;
+    white-space: nowrap;
 }
+
+.header_links > li > a {
+    text-decoration: none;
+}
+
+.header_links > li > a:hover {
+    color: red;
+}
+
+
 
 /* END HEADER */
 
 /* MAIN */
 
 main > * {
-    margin: 0 60px 100px 60px;
-
+    justify-content: space-between;
 }
 
 .flex {
@@ -82,7 +104,7 @@ main > * {
     height: 72px;
     flex-shrink: 0;
 
-    font-size: 24px;
+    font-size: calc(var(--font-size) * 1.5);
 }
 
 .one-button {
@@ -115,6 +137,7 @@ main > * {
 
 .portfolio-image {
     margin-left: 50px;
+    margin-right: 50px;
     width: 564px;
     height: 564px;
     border-radius: 0 0 0 200px;
@@ -128,15 +151,15 @@ main > * {
     object-fit: cover;
 }
 
-.portfolio-welcome-message {
+.portfolio-welcome-message  {
     color: var(--blue);
-    font-size: 30px;
+    font-size: calc(var(--font-size) * 1.75);
     font-weight: 400;
 }
 
-.portfolio-user-info {
+.portfolio-user-info, .about-me-title {
     color: var(--blue);
-    font-size: 48px;
+    font-size: calc(var(--font-size) * 3);
     font-weight: 700;
 }
 
@@ -144,9 +167,9 @@ main > * {
     color: #F2BD00;
 }
 
-.portfolio-description {
+.portfolio-description, .about-me-description {
     color: #383838;
-    font-size: 24px;
+    font-size: calc(var(--font-size) * 1.5);
 }
 
 /* END PORTFOLIO SECTION */
@@ -157,20 +180,6 @@ main > * {
     align-self: center;
 }
 
-.about-me-title {
-    color: var(--blue);
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.about-me-description {
-    width: 415px;
-    height: 303px;
-
-    color: #000;
-    font-size: 24px;
-    font-weight: 400;
-}
 
 .about-me-image {
     margin-left: 50px;
@@ -220,7 +229,6 @@ main > * {
 }
 
 
-
 .my-project-images {
     display: flex;
     text-align: center;
@@ -239,7 +247,6 @@ main > * {
 .my-project-images-row:last-child {
     margin-bottom: 0;
 }
-
 
 
 .my-project-images-row > img {
