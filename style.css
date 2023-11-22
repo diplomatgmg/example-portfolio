@@ -1,125 +1,127 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-    --blue: #2000E7;
-    --font-size: 1rem
+  --blue: #2000e7;
+  --font-size: 1rem;
 }
 
-
 body {
-    margin: auto;
-    font-family: Poppins, sans-serif;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    max-width: 1440px;
-    width: 100%;
-    background-color: #f8f8ec;
+  margin: auto;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #f8f8ec;
 }
 
 body > * {
-    background-color: white;
-    padding: calc(var(--font-size) * 3);
+  background-color: white;
+  padding: calc(var(--font-size) * 3);
 }
 
-
-p, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 /* END GENERAL */
 
 /* HEADER */
 header {
-    padding-top: 45px;
-    justify-content: space-between;
-
+  padding-top: 45px;
+  justify-content: space-between;
 }
 
 .logo {
-    color: #0E0578;
-    font-size: calc(var(--font-size) * 3);
-    font-weight: 700;
-    text-decoration: none;
+  color: #0e0578;
+  font-size: calc(var(--font-size) * 3);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .header_links {
-    padding: 0;
-    margin: 0;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .header_links > li {
-    color: #686565;
-    font-size: calc(var(--font-size) * 1.75);
-    font-weight: 400;
-    list-style: none;
-    margin: 0 50px;
-    white-space: nowrap;
+  color: #686565;
+  font-size: calc(var(--font-size) * 1.75);
+  font-weight: 400;
+  list-style: none;
+  margin: 0 50px;
+  white-space: nowrap;
 }
 
 .header_links > li > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header_links > li > a:hover {
-    color: red;
+  color: red;
 }
-
-
 
 /* END HEADER */
 
 /* MAIN */
 
 main > * {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
-.left-section, .right-section {
-    width: 50%;
+.left-section,
+.right-section {
+  width: 50%;
 }
 
 .buttons {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 
-    border-radius: 10px;
-    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
 
-    width: 246px;
-    height: 72px;
-    flex-shrink: 0;
+  width: 246px;
+  height: 72px;
+  flex-shrink: 0;
 
-    font-size: calc(var(--font-size) * 1.5);
+  font-size: calc(var(--font-size) * 1.5);
 }
 
 .one-button {
-    margin-left: 48px;
+  margin-left: 48px;
 }
 
 .button-blue {
-    color: #FFF;
-    background: var(--blue);
+  color: #fff;
+  background: var(--blue);
 }
 
 .button-white {
-    color: var(--blue);
-    border: 2px solid var(--blue);
-    background: rgba(32, 0, 231, 0.04);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  background: rgba(32, 0, 231, 0.04);
 }
 
 /* END MAIN */
@@ -127,49 +129,52 @@ main > * {
 /* PORTFOLIO SECTION */
 
 .portfolio-section {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .portfolio-details > * {
-    padding: 5px 0;
-    margin-right: 50px;
+  padding: 5px 0;
+  margin-right: 50px;
 }
 
 .portfolio-image {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 564px;
-    height: 564px;
-    border-radius: 0 0 0 200px;
-    box-shadow: 36px -32px 0 0 rgba(135, 117, 249, 0.50);
-    overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 564px;
+  height: 564px;
+  border-radius: 0 0 0 200px;
+  box-shadow: 36px -32px 0 0 rgba(135, 117, 249, 0.5);
+  overflow: hidden;
 }
 
 .portfolio-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.portfolio-welcome-message  {
-    color: var(--blue);
-    font-size: calc(var(--font-size) * 1.75);
-    font-weight: 400;
+.portfolio-welcome-message {
+  color: var(--blue);
+  font-size: calc(var(--font-size) * 1.75);
+  font-weight: 400;
 }
 
-.portfolio-user-info, .about-me-title {
-    color: var(--blue);
-    font-size: calc(var(--font-size) * 3);
-    font-weight: 700;
+.portfolio-user-info,
+.about-me-title {
+  color: var(--blue);
+  font-size: calc(var(--font-size) * 3);
+  font-weight: 700;
 }
 
 .portfolio-user-info > span {
-    color: #F2BD00;
+  color: #f2bd00;
 }
 
-.portfolio-description, .about-me-description {
-    color: #383838;
-    font-size: calc(var(--font-size) * 1.5);
+.portfolio-description,
+.about-me-description {
+  padding-top: 10px;
+  color: #383838;
+  font-size: calc(var(--font-size) * 1.5);
 }
 
 /* END PORTFOLIO SECTION */
@@ -177,21 +182,20 @@ main > * {
 /* ABOUT ME */
 
 .about-me-section {
-    align-self: center;
+  align-self: center;
 }
 
-
 .about-me-image {
-    margin-left: 50px;
-    width: 900px;
-    height: 900px;
-    overflow: hidden;
+  margin-left: 50px;
+  width: 900px;
+  height: 900px;
+  overflow: hidden;
 }
 
 .about-me-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* END ABOUT ME */
@@ -199,61 +203,57 @@ main > * {
 /* MY PROJECTS */
 
 .my-project-section {
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 
-    margin-top: 200px;
-    margin-left: 0;
-    margin-right: 0;
+  margin-top: 200px;
+  margin-left: 0;
+  margin-right: 0;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-    width: 100%;
-    height: 910px;
-    background: rgba(255, 214, 150, 0.20);
+  width: 100%;
+  height: 910px;
+  background: rgba(255, 214, 150, 0.2);
 }
 
 .my-project-title {
-    color: var(--blue);
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: 10px;
+  color: var(--blue);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 10px;
 }
 
 .my-project-description {
-    color: #000;
-    font-size: 24px;
-    font-weight: 400;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-
 .my-project-images {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    column-gap: 100px;
-
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  column-gap: 100px;
 }
 
 .my-project-images-row {
-    justify-content: space-around;
-    margin-bottom: 50px;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .my-project-images-row:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 .my-project-images-row > img {
-    width: 246px;
-    height: 180px;
+  width: 246px;
+  height: 180px;
 }
-
 
 /* END MY PROJECTS */
 
