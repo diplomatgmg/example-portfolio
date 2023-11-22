@@ -1,78 +1,100 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 <head>
-    <meta charset="UTF-8">
-    <title>UniDesign</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset='UTF-8'>
+  <title>UniDesign</title>
+  <link href='style.css' rel='stylesheet'>
 </head>
 <body>
 
-<header class="flex">
-    <a class="logo" href="#">UniDesign</a>
-    <ul class="flex header_links">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">Hire Me</a></li>
-    </ul>
+<header class='flex'>
+  <a class='logo' href='#'>UniDesign</a>
+  <ul class='flex header_links'>
+    <li><a href='#about-me'>About Me</a></li>
+    <li><a href='#my-projects'>Projects</a></li>
+    <li><a href='#contact-me'>Contacts</a></li>
+    <li><a href='#'>Hire Me</a></li>
+  </ul>
 </header>
 
 
 <main>
-    <div class="flex portfolio-section">
-        <div class="left-section">
-            <h6 class="portfolio-welcome-message">Welcome To My Portfolio</h6>
-            <h5 class="portfolio-user-info">Hi, I am Steven <br> UI/UX <span>Designer</span></h5>
-            <p class="portfolio-description">Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et,
-                plateo erat est sed turpis hoc equit</p>
-            <div class="flex buttons">
-                <button class="button button-blue">Hire Me</button>
-                <button class="button button-white">My Project</button>
-            </div>
-        </div>
-        <div class="right-section portfolio-image">
-            <img alt="My Photo" src="/src/images/my-photo.jpg">
-        </div>
+  <div class='flex portfolio-section'>
+    <div class='left-section'>
+      <h6 class='portfolio-welcome-message'>Welcome To My Portfolio</h6>
+      <h5 class='portfolio-user-info'>Hi, I am Steven <br> UI/UX <span>Designer</span></h5>
+      <p class='portfolio-description'>Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et,
+        plateo erat est sed turpis hoc equit</p>
+      <div class='flex buttons'>
+        <button class='button button-blue'>Hire Me</button>
+        <button class='button button-white'>My Project</button>
+      </div>
     </div>
-
-    <div class="flex">
-        <div class="left-section about-me-section">
-            <h5 class="about-me-title">About Me</h5>
-            <p class="about-me-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has .</p>
-            <button class="button one-button button-blue">Hire Me</button>
-        </div>
-        <div class="right-section about-me-image">
-            <img alt="" src="/src/images/about-me.png">
-        </div>
+    <div class='right-section portfolio-image'>
+      <img alt='My Photo' src='/src/images/my-photo.jpg'>
     </div>
+  </div>
 
-    <div class="flex my-project-section">
-        <h5 class="my-project-title">My Projects</h5>
-        <p class="my-project-description">Lorem Ipsum is simply dummy text of the printing</p>
-        <div class="flex my-project-images">
-            <div class="flex my-project-images-row">
-                <img alt="" src="/src/images/project-images/project-image-1.png">
-                <img alt="" src="/src/images/project-images/project-image-2.png">
-                <img alt="" src="/src/images/project-images/project-image-3.png">
-            </div>
-
-            <div class="flex my-project-images-row">
-                <img alt="" src="/src/images/project-images/project-image-4.png">
-                <img alt="" src="/src/images/project-images/project-image-1.png">
-                <img alt="" src="/src/images/project-images/project-image-2.png">
-            </div>
-
-            <div class="flex my-project-images-row">
-                <img alt="" src="/src/images/project-images/project-image-3.png">
-                <img alt="" src="/src/images/project-images/project-image-4.png">
-                <img alt="" src="/src/images/project-images/project-image-1.png">
-            </div>
-        </div>
+  <div class='flex about-me-section' id='about-me'>
+    <div class='left-section'>
+      <h5 class='about-me-title'>About Me</h5>
+      <p class='about-me-description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make a type specimen book. It has .</p>
+      <button class='button one-button button-blue'>Hire Me</button>
     </div>
+    <div class='right-section about-me-image'>
+      <img alt='' src='/src/images/about-me.png'>
+    </div>
+  </div>
 
-    <div></div>
+  <div class='flex my-projects-section' id='my-projects'>
+    <h5 class='my-projects-title'>My Projects</h5>
+    <p class='my-projects-description'>Lorem Ipsum is simply dummy text of the printing</p>
+    <div class='flex my-projects-images'>
+      <div class='flex my-projects-images-row'>
+        <img alt='' src='/src/images/project-images/project-image-1.png'>
+        <img alt='' src='/src/images/project-images/project-image-2.png'>
+        <img alt='' src='/src/images/project-images/project-image-3.png'>
+      </div>
+
+      <div class='flex my-projects-images-row'>
+        <img alt='' src='/src/images/project-images/project-image-4.png'>
+        <img alt='' src='/src/images/project-images/project-image-1.png'>
+        <img alt='' src='/src/images/project-images/project-image-2.png'>
+      </div>
+
+      <div class='flex my-projects-images-row'>
+        <img alt='' src='/src/images/project-images/project-image-3.png'>
+        <img alt='' src='/src/images/project-images/project-image-4.png'>
+        <img alt='' src='/src/images/project-images/project-image-1.png'>
+      </div>
+    </div>
+  </div>
+
+  <div class='flex contact-me-section' id='contact-me'>
+    <h5 class='contact-me-title'>Contact Me</h5>
+    <p class='contact-me-description'>Lorem Ipsum is simply dummy text of the printing</p>
+    <div class='flex contact-me-form-section'>
+      <div class='left-section'>
+        <form class='contact-me-form'>
+          <label for='email'>Email:</label>
+          <input id='email' name='email' required type='email'>
+
+          <label for='password'>Password:</label>
+          <input id='password' name='password' required type='password'>
+
+          <label for='message'>Message:</label>
+          <textarea id='message' name='message' required rows='4'></textarea>
+
+          <button type='button'>Contact</button>
+        </form>
+      </div>
+      <div class='right-section contact-me-image'>
+        <img alt='' src='/src/images/contact-me.png'>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer></footer>
