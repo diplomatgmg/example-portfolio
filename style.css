@@ -195,8 +195,7 @@ main > * {
 
 .about-me-image,
 .contact-me-image {
-  margin-left: 50px;
-  width: 900px;
+  width: auto;
   height: 900px;
   overflow: hidden;
 }
@@ -265,6 +264,14 @@ main > * {
 .contact-me-section {
   flex-direction: column;
   align-items: center;
+
+  padding-top: 50px;
+
+  background: rgba(67, 186, 253, 0.06);
+}
+
+.contact-me-title {
+  letter-spacing: var(--font-size);
 }
 
 .contact-me-form-section {
@@ -273,7 +280,70 @@ main > * {
 
 .contact-me-form {
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+
+.email-input,
+.password-input,
+.message-input,
+.contact-me-form-submit {
+  width: 400px;
+
+  margin: 20px 0;
+  padding-left: 20px;
+
+  color: black;
+  font-size: var(--font-size);
+  border: 0;
+  background: #fff;
+  box-shadow: 10px 10px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contact-me-form-submit {
+  padding: 0;
+  font-weight: bold;
+}
+
+.email-input:focus,
+.email-input:hover,
+.password-input:focus,
+.password-input:hover,
+.message-input:focus,
+.message-input:hover,
+.contact-me-form-submit:hover {
+  outline: 3px solid black;
+}
+
+.email-input::placeholder,
+.password-input::placeholder,
+.message-input::placeholder {
+  color: black;
+}
+
+.email-input,
+.password-input,
+.contact-me-form-submit {
+  height: 50px;
+}
+
+.contact-me-form-submit {
+  align-self: center;
+  width: 50%;
+}
+
+.message-input {
+  height: 150px;
+  resize: none;
+}
+
+.message-input {
+  padding-top: var(--font-size);
+  font-family: Poppins, sans-serif;
+}
+
+.contact-me-image {
+  width: 65%;
 }
 
 /* END CONTACT ME */
