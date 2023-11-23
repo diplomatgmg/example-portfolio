@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   max-width: 1440px;
-  width: 100%;
+  width: 75%;
   background-color: #f8f8ec;
 }
 
@@ -76,6 +76,10 @@ header {
 
 .header_links > li > a:hover {
   color: red;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 /* END HEADER */
@@ -350,10 +354,113 @@ main > * {
 
 /* FOOTER */
 
-/*footer {*/
-/*    width: 100%;*/
-/*    height: 800px;*/
-/*    background-color: #ffd696;*/
-/*}*/
+footer {
+  width: 100%;
+  background-color: rgba(255, 214, 150, 0.2);
+}
+
+.footer-logo-subscribe {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  font-size: calc(var(--font-size) * 5);
+}
+
+.footer-subscribe > input,
+.footer-subscribe > button {
+  padding: 0;
+  margin-top: 20px;
+
+  border-radius: 25px;
+  border: 0;
+  height: 75px;
+}
+
+.footer-subscribe {
+  position: relative;
+  right: 10px;
+}
+
+.footer-subscribe > input {
+  padding-left: 50px;
+  font-size: calc(var(--font-size) * 1.25);
+  color: white;
+  outline: none;
+  width: 375px;
+
+  z-index: -1;
+
+  background: #000;
+}
+
+.footer-subscribe > input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.footer-subscribe > button {
+  font-size: var(--font-size);
+
+  position: absolute;
+  right: -20px;
+  width: 125px;
+  background: #f965fc;
+  color: white;
+  font-weight: bold;
+}
+
+.no-wrap-li > li {
+  white-space: nowrap;
+}
+
+.footer-information ul > li {
+  padding: 10px;
+}
+
+.footer-information ul > li:first-child {
+  font-weight: bold;
+}
+
+.footer-information-ul > li {
+  font-size: calc(var(--font-size) * 1.5);
+
+  list-style: none;
+}
+
+.footer-information-ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-information-ul > li > a:hover {
+  color: #8a8a8a;
+}
+
+footer > hr {
+  width: 90%;
+}
+
+.footer-information,
+.footer-copyright-links {
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+
+.footer-copyright {
+  white-space: nowrap;
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+.footer-socials {
+  text-align: end;
+}
+
+.footer-socials > img {
+  margin-left: 50px;
+  width: 5%;
+}
 
 /* END FOOTER */
