@@ -425,7 +425,7 @@ footer {
 }
 
 .footer-information-ul > li {
-  font-size: calc(var(--font-size) * 1.5);
+  font-size: calc(var(--font-size) * 1.25);
 
   list-style: none;
 }
