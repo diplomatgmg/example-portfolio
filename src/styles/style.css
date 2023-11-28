@@ -59,6 +59,7 @@ header {
   padding: 0;
   margin: 0;
   align-items: center;
+  overflow: hidden;
 }
 
 .header_links > li {
@@ -66,7 +67,7 @@ header {
   font-size: calc(var(--font-size) * 1.5);
   font-weight: 400;
   list-style: none;
-  margin: 0 50px;
+  padding: 0 30px;
   white-space: nowrap;
 }
 
@@ -368,7 +369,7 @@ footer {
 }
 
 .logo-footer {
-  font-size: calc(var(--font-size) * 5);
+  font-size: calc(var(--font-size) * 3);
 }
 
 .footer-subscribe > input,
@@ -391,7 +392,7 @@ footer {
   font-size: calc(var(--font-size) * 1.25);
   color: white;
   outline: none;
-  width: 375px;
+  width: 60%;
 
   z-index: -1;
 
@@ -412,6 +413,10 @@ footer {
   background: #f965fc;
   color: white;
   font-weight: bold;
+}
+
+.footer-information-ul {
+  overflow: hidden;
 }
 
 .no-wrap-li > li {
